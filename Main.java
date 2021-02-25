@@ -26,7 +26,7 @@ public class Main {
         BigDecimal lambda;
 
         int probability = 44;
-        int intensity = 801;
+        int intensity = 810;
         double ti;
         double tcp;
 
@@ -41,6 +41,11 @@ public class Main {
                                 481, 238, 253, 207, 879, 182, 670, 146, 453,
                                 502, 206, 94, 7, 28, 17, 31, 34, 136, 659,209,
                                 143, 652, 119, 115, 259};
+
+        if(rejectSelection.length == 0){
+            System.out.println("Не може бути пустого масиву!!!");
+            System.exit(0);
+        }
 
         sortedSelection = new ArrayList<>(Arrays.asList(rejectSelection));
         sortedSelection = sortedSelection.stream().sorted().collect(Collectors.toList());
