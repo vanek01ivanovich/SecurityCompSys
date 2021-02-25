@@ -44,7 +44,7 @@ public class Main {
 
         if(rejectSelection.length == 0){
             System.out.println("Не може бути пустого масиву!!!");
-            System.exit(0);
+            System.exit(1);
         }
 
         sortedSelection = new ArrayList<>(Arrays.asList(rejectSelection));
