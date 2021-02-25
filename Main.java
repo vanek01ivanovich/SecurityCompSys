@@ -26,7 +26,7 @@ public class Main {
         BigDecimal lambda;
 
         int probability = 44;
-        int intensity = 810;
+        int intensity = 801;
         double ti;
         double tcp;
 
