@@ -81,7 +81,7 @@ public class Main {
         ty = ti - h * d.doubleValue();
         System.out.println("Ty = " + ty);
 
-        int maxRange = (int)rangeParts.stream().filter(i -> i <= intensity).count();
+        int maxRange = (int)rangeParts.stream().filter(i -> i <= probability).count();
         pt = getIntensityOrProbability(probability,maxRange);
         pt = BigDecimal.ONE.subtract(pt);
         System.out.println("Ймовірність безвідмовної роботи на час " + probability + " годин = " + pt);
